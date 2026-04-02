@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Financial KPIs Dashboard</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Financial KPIs Dashboard</h1>
+    <div class="buttons">
+      <button id="downloadTemplate">Download Template</button>
+      <button id="loadTemplate">Load Template</button>
+      <button id="refreshTemplate">Show KPIs</button>
+      
+      <!-- New category buttons -->
+      <button id="showGeneral">Show General</button>
+      <button id="showOperative">Show Operative</button>
+      <button id="showCashFlow">Show Cash Flow</button>
+      <button id="showReturns">Show Returns</button>
+      
+      <input type="file" id="fileInput" accept=".xlsx" style="display:none" />
+    </div>
+    <div class="status" id="status"></div>
+    <div class="results" id="results"></div>
+  </div>
+  
+  <!-- Include SheetJS library -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="javascript.js"></script>
+</body>
+</html>

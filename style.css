@@ -1,0 +1,74 @@
+/* Futuristic Blue-Green-Cyan Theme */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.container {
+  background: rgba(0, 0, 50, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff inset;
+  max-width: 900px;
+  width: 90%;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background: linear-gradient(135deg, #00ffff, #00bfff);
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff inset;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #00bfff, #00ffff);
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff inset;
+}
+
+#status {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  min-height: 24px;
+}
+
+.results {
+  max-height: 300px;
+  overflow-y: auto;
+  background: rgba(0,0,50,0.5);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 0.9em;
+  white-space: pre-wrap;
+  color: #b2ebf2;
+}
